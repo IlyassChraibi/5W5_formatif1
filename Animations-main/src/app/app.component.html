@@ -1,0 +1,7 @@
+<div style="padding: 20px">
+  <h1>Animation CSS</h1>
+  <button (click)="shakeMe()" mat-raised-button color="accent" style="margin-right: 10px">Shake</button>
+  <button (click)="bounceMe()" mat-raised-button color="primary">Bounce</button>
+  <button (click)="shakeThenBounce()" mat-raised-button color="warn" style="margin-left: 10px">Shake then Bounce</button>
+  <div [class.bounce-top]="bounce" [class.shake-top]="shake" style="height: 100px; width: 100px; background-color: aqua; margin: 20px"></div>
+</div>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\5W5_formatif1.props" />
+</Project>
