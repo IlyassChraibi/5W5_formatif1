@@ -1,0 +1,17 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="chiffrePrefere">Votre chiffre préféré :</label>
+    <input type="number" id="chiffrePrefere" formControlName="chiffrePrefere" required>
+    <div *ngIf="myForm.get('chiffrePrefere')?.hasError('required')">
+      Chiffre préféré requis
+    </div>
+  </div>
+  <div>
+    <label for="description">Description :</label>
+    <textarea id="description" formControlName="description" required></textarea>
+    <div *ngIf="myForm.get('description')?.hasError('required')">
+      Description requise
+    </div>
+  </div>
+  <button type="submit" [disabled]="!myForm.valid">Soumettre</button>
+</form>
