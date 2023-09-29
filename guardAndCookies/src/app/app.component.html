@@ -1,9 +1,11 @@
 <div>
-  <label for="checkbox1">Checkbox 1</label>
-  <input type="checkbox" id="checkbox1">
+  <label for="checkbox1">Jaime les choses sucrées !</label>
+  <input type="checkbox" id="checkbox1" [(ngModel)]="sucresChecked">
 
-  <label for="checkbox2">Checkbox 2</label>
-  <input type="checkbox" id="checkbox2">
+  <label for="checkbox2">Jaime les choses salées !</label>
+  <input type="checkbox" id="checkbox2" [(ngModel)]="salesChecked">
   
-  <button>Mon bouton</button>
+
+  <button (click)="saveState()">Jai faim !</button>
+  <router-outlet></router-outlet>
 </div>
